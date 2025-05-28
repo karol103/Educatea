@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('fondo.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #333;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      max-width: 700px;
+      margin: 50px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .imagen-encabezado {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 300px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      font-size: 26px;
+    }
+
+    .info {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .info p {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .info i {
+      margin-right: 8px;
+      color: #003366;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #003366;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #00509e;
+    }
+
+    .icono {
+      font-size: 20px;
+    }
+  </style>
+
+  <!-- Íconos FontAwesome desde CDN -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="CONTACTO.png" alt="Contenido" class="imagen-encabezado">
+    <h1>Contacto</h1>
+
+    <div class="info">
+      <p><i class="fas fa-user icono"></i>Karol Marcela Ángulo</p>
+      <p><i class="fas fa-envelope icono"></i><a href="mailto:karolcaicedofk@gmail.com">karolcaicedofk@gmail.com</a></p>
+    </div>
+
+    <form action="mailto:karolcaicedofk@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="Nombre" placeholder="Tu nombre" required>
+      <input type="email" name="Correo" placeholder="Tu correo electrónico" required>
+      <textarea name="Mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</body>
+</html>
